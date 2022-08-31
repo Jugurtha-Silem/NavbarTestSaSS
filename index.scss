@@ -1,0 +1,151 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: url(./img/rsz-simon-migaj-421505-unsplash-1072x568.jpg) no-repeat center/cover;
+    height: 100vh;
+    overflow: hidden;
+    backdrop-filter:blur(7px);
+
+}
+
+$color1: rgb(250, 0, 167);
+$color2: rgb(255, 255, 255);
+$color3: rgb(104, 240, 255);
+$color5:black;
+
+
+@mixin center {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{ 
+    height: 100vh;
+    width: auto;
+
+    .navbar {
+        position: relative;
+        @include center;
+        justify-content: space-between;
+        margin: 10px;
+        height: 60px;
+    
+        a {  
+            padding-left: 10px;
+            font-size: 1.5em;
+            color: black;
+    
+            &:hover{
+                color: white;
+            }
+        }
+    
+        ul {
+            margin-right: 50px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            li {
+                
+                a{
+                    
+                    &:hover{
+                        color: white;
+                    }
+    
+                }
+            }
+    
+        }
+    
+    }
+    
+    .menuhamburger{
+        img{
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 10px;
+            right: 50px;
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 660px){
+
+    #header{ 
+
+        .navbar {
+            position: relative;
+        
+            ul {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                right: 50px;
+                top: 150px;
+                bottom: -200px;
+                margin: 0;
+                padding: 0;
+                height: 50px;
+                width: 50px;
+                align-items: center;
+                opacity: 0;
+                
+        
+                li {
+                    margin: 10px;
+                    
+                    a{
+                        
+                        &:hover{
+                            color: white;
+                        }
+        
+                    }
+                }
+        
+            }
+        
+        }
+        
+        .menuhamburger{
+
+            img{
+                cursor: pointer;
+                display: grid;
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                top: 10px;
+                right: 50px;
+    
+            }
+        }
+    }
+
+}
+
+
+.sec-1{
+    height: 100px;
+    width: auto;
+    background: blue;
+}
+    
+

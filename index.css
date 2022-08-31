@@ -1,0 +1,96 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./img/rsz-simon-migaj-421505-unsplash-1072x568.jpg) no-repeat center/cover;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+#header {
+  height: 100vh;
+  width: auto;
+}
+#header .navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  height: 60px;
+}
+#header .navbar a {
+  padding-left: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+#header .navbar a:hover {
+  color: white;
+}
+#header .navbar ul {
+  margin-right: 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .navbar ul li a:hover {
+  color: white;
+}
+#header .menuhamburger img {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  right: 50px;
+}
+
+@media screen and (max-width: 660px) {
+  #header .navbar {
+    position: relative;
+  }
+  #header .navbar ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 50px;
+    top: 150px;
+    bottom: -200px;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    opacity: 0;
+  }
+  #header .navbar ul li {
+    margin: 10px;
+  }
+  #header .navbar ul li a:hover {
+    color: white;
+  }
+  #header .menuhamburger img {
+    cursor: pointer;
+    display: grid;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 50px;
+  }
+}
+.sec-1 {
+  height: 100px;
+  width: auto;
+  background: blue;
+}/*# sourceMappingURL=index.css.map */
